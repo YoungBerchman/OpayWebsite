@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+.sub_header{
+    width: 57%;
+    height: 60px;
+    margin-right: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mini_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    font-weight: 100;
+    font-size: 20px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    position: absolute;
+    min-width: 150px;
+    background-color: white;
+    display: none;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+.dropdown-content a{
+    color: black;
+    padding: 8px 10px;
+    display: block;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 100;
+}
+.dropdown-content a:hover{
+    background-color: rgb(187, 187, 250);
+    transition: 0.25s;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.subdropdown{
+    position: relative;
+    display: inline-block;
+}
+.subdropdown-content{
+    background-color: white;
+    min-width: 150px;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.2);
+}
+.subdropdown-content a{
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: medium;
+    font-weight: 100;
+}
+.subdropdown-content a:hover{
+    background-color: rgb(188, 188, 248);
+    transition: 0.25s;
+}
+.subdropdown:hover .subdropdown-content{
+    display: block;
+}
+.hero{
+    background-image: url(img/imgi_2_indexBanner.0b5f115.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh-75px);
+    margin-top: 75px;
+    width: 100%;
+}
+.hero1{
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+}
+.hero2{
+    width: 47%;
+    height: 410px;
+    margin-left: 70px;
+}
+.middle{
+    width: 100%;
+    height: 50%;
+    background-color: red;
+}
+.middle{
+    width: 100%;
+    height: 77vh;
+    background-color: red;
+}
+.fund{
+    width: 100%;
+    height: 77vh;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fund1{
+    width: 42%;
+    height: 60vh;
+    background-color: pink;
+    margin-left:30px;
+}
+.fund2{
+    width: 42%;
+    height: 60vh;
+    background-color: pink;
+    margin-right:30px
+
+}
