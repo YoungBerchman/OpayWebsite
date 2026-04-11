@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing:border-box
 }
 .header{
     width: 100%;
@@ -13,6 +14,10 @@
     top: 0;
     left: 0;
     z-index: 1000;     /* higher than the images */
+}
+.mini_header nav a{
+    text-decoration: none;
+    color: black;
 }
 .sub_header{
     width: 57%;
@@ -88,7 +93,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(100vh-75px);
+    height: calc(100vh - 75px);
     margin-top: 75px;
     width: 100%;
 }
@@ -330,4 +335,134 @@
     display: flex;
     gap: 50px;
     color: rgba(255, 255, 255, 0.897);
+}
+.style{
+    font-weight: bold;
+    font-size: 46px;
+}
+
+@media (max-width: 768px){
+
+/* HEADER */
+.sub_header{
+    width: 95%;
+    margin: 0;
+}
+
+.mini_header{
+    display: none; /* hide full nav on small screens */
+}
+
+/* HERO */
+.hero{
+    height: auto;
+}
+
+.hero1{
+    height: auto;
+    padding: 40px 20px;
+}
+
+.hero2{
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+}
+
+.hero2 div:first-child{
+    font-size: 32px !important;
+}
+
+.hero2 div:nth-child(2){
+    font-size: 14px !important;
+    line-height: 22px !important;
+}
+
+.hero2 img{
+    width: 100% !important;
+}
+
+/* MIDDLE CARDS */
+.middle{
+    height: auto;
+    padding: 40px 0;
+}
+
+.middle1{
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+}
+
+.hovercontainer{
+    width: 100% !important;
+}
+
+/* ALL 2-COLUMN SECTIONS STACK */
+.fund,
+.sub_fund,
+.main_fund,
+.iphone,
+.security,
+.quick{
+    flex-direction: column;
+    height: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.fund1, .fund2,
+.sub_fund1, .sub_fund2,
+.main_fund1, .main_fund2,
+.iphone2, .fit,
+.mini_security, .mini_security1,
+.quick1, .quick2{
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+
+/* Customers */
+.customers{
+    height: auto;
+    padding: 40px 20px;
+}
+
+.customers main > div{
+    flex-direction: column !important;
+    gap: 40px !important;
+}
+
+.customers main > div > div{
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Footer */
+.mini_footer{
+    height: auto;
+    padding: 40px 20px;
+}
+
+.mini_footer1{
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+
+.footer{
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+    padding: 20px 0;
+}
+
+.style{
+    font-size: 30px;
+}
+
+.here{
+    font-size: 28px;
+}
 }
